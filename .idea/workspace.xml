@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1ace41b-0574-4f24-8e27-1e255e572e62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/adopcion/urls.py" afterPath="$PROJECT_DIR$/apps/adopcion/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/adopcion/views.py" afterPath="$PROJECT_DIR$/apps/adopcion/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/adopcion/solicitud_form.html" afterPath="$PROJECT_DIR$/templates/adopcion/solicitud_form.html" />
-    </list>
+    <list default="true" id="e1ace41b-0574-4f24-8e27-1e255e572e62" name="Default" comment="" />
     <ignored path="refugio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
