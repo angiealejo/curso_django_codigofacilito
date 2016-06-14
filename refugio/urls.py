@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.contrib.auth.views import login, password_reset, password_reset_done, password_reset_confirm, password_reset_complete
+from django.contrib.auth.views import login, logout_then_login, password_reset, password_reset_done, password_reset_confirm, password_reset_complete
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^mascota/', include('apps.mascota.urls', namespace='mascota')),
     url(r'^adopcion/', include('apps.adopcion.urls', namespace='adopcion')),
     url(r'^usuario/', include('apps.usuario.urls', namespace='usuario')),
-    url(r'^$', login, {'template_name':'index.html'}, name='login'),
+    url(r'^accounts/login/', login, {'template_name':'index.html'}, name='login'),
+    url(r'^logout/', logout_then_login, name='logout'),
     url(r'^reset/password_reset', password_reset, 
         {'template_name':'registration/password_reset_form.html',
         'email_template_name': 'registration/password_reset_email.html'}, 
