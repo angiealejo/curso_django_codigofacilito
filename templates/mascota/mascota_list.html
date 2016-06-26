@@ -10,6 +10,7 @@
 			<td>Sexo</td>
 			<td>Edad</td>
 			<td>Fecha de Rescate</td>
+			<td>Vacunas</td>
 			<td>Adoptante</td>
 			<td>Acciones</td>
 		</tr>
@@ -24,6 +25,14 @@
 			<td>{{ mascota.sexo }}</td>
 			<td>{{ mascota.edad_aproximada }}</td>
 			<td>{{ mascota.fecha_rescate }}</td>
+			<td>
+			<ul>{% for vacuna in mascota.vacuna.all %}
+				<li>
+					{{vacuna.nombre}}
+				</li>
+				{% endfor %}
+			</ul>
+    		</td>
 			<td>{{ mascota.persona.nombre }} {{ mascota.persona.apellidos }}</td>
 			<td>
 				<a class="btn btn-primary" href="{% url 'mascota:mascota_editar' mascota.id %}">Editar</a>
