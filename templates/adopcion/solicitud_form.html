@@ -1,0 +1,63 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<form method="post">
+	{% csrf_token %}
+	
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.nombre.name}}">{{form2.nombre.label}}</label>
+				{{form2.nombre}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.nombre.apellidos}}">{{form2.apellidos.label}}</label>
+				{{form2.apellidos}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.edad.name}}">{{form2.edad.label}}</label>
+				{{form2.edad}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.email.name}}">{{form2.email.label}}</label>
+				{{form2.email}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.telefono.name}}">{{form2.telefono.label}}</label>
+				{{form2.telefono}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form2.domiclio.name}}">{{form2.domicilio.label}}</label>
+				{{form2.domicilio}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form.numero_mascotas.name}}">{{form.numero_mascotas.label}}</label>
+				{{form.numero_mascotas}}
+			</div>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<label for="{{form.razones.name}}">{{form.razones.label}}</label>
+				{{form.razones}}
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8 col-md-offset-2">
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit">Guardar</button>
+			</div>
+		</div>
+</form>
+{% endblock %}
